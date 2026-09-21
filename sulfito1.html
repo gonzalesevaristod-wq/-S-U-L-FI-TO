@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Para mi Sulfito 🌼</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:linear-gradient(180deg,#FFF9E6,#E8F8D8,#FFF4C7);
+    min-height:100vh;
+    overflow-x:hidden;
+    color:#4B3A1A;
+}
+
+header{
+    text-align:center;
+    padding:35px 20px;
+}
+
+header h1{
+    font-size:2.6rem;
+    color:#D4A017;
+    text-shadow:1px 1px 3px rgba(0,0,0,.15);
+}
+
+header p{
+    margin-top:10px;
+    font-size:1.1rem;
+}
+
+nav{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    flex-wrap:wrap;
+    margin-bottom:25px;
+}
+
+nav button{
+    border:none;
+    background:#FFD54F;
+    color:#5D4037;
+    padding:12px 20px;
+    border-radius:25px;
+    cursor:pointer;
+    font-weight:bold;
+    transition:.3s;
+}
+
+nav button:hover{
+    transform:translateY(-3px);
+    background:#FBC02D;
+}
+
+.section{
+    display:none;
+    max-width:900px;
+    margin:auto;
+    background:rgba(255,255,255,.65);
+    backdrop-filter:blur(8px);
+    padding:30px;
+    border-radius:25px;
+    box-shadow:0 8px 20px rgba(0,0,0,.12);
+    margin-bottom:40px;
+}
+
+.active{
+    display:block;
+    animation:fade .7s;
+}
+
+@keyframes fade{
+from{opacity:0;transform:translateY(15px);}
+to{opacity:1;transform:translateY(0);}
+}
+
+.song{
+    background:#FFFDE7;
+    padding:18px;
+    border-left:6px solid #FBC02D;
+    border-radius:15px;
+    margin:20px 0;
+}
+
+.song a{
+    color:#D81B60;
+    font-weight:bold;
+    text-decoration:none;
+}
+
+.song p{
+    margin-top:10px;
+    line-height:1.7;
+}
+
+.letter{
+    line-height:1.9;
+    font-size:1.1rem;
+    text-align:justify;
+}
+
+.signature{
+    margin-top:25px;
+    text-align:right;
+    font-style:italic;
+    font-weight:bold;
+    color:#C2185B;
+}
+
+.flowers{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(120px,1fr));
+    gap:25px;
+    margin:25px 0;
+}
+
+.flower{
+    text-align:center;
+    animation:float 3s ease-in-out infinite;
+}
+
+.flower:nth-child(2){animation-delay:.5s;}
+.flower:nth-child(3){animation-delay:1s;}
+.flower:nth-child(4){animation-delay:1.5s;}
+.flower:nth-child(5){animation-delay:2s;}
+.flower:nth-child(6){animation-delay:2.5s;}
+
+@keyframes float{
+0%,100%{transform:translateY(0);}
+50%{transform:translateY(-10px);}
+}
+
+.message{
+    text-align:center;
+    font-size:1.4rem;
+    font-weight:bold;
+    color:#C2185B;
+    margin-top:15px;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    color:#6D4C41;
+}
+
+.petal{
+    position:fixed;
+    top:-30px;
+    font-size:22px;
+    animation:fall linear infinite;
+    pointer-events:none;
+}
+
+@keyframes fall{
+to{
+transform:translateY(110vh) rotate(360deg);
+opacity:.8;
+}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>🌼 Para mi Sulfito 🌼</h1>
+<p>Un pedacito de mi corazón convertido en una página web 💛</p>
+</header>
+
+<nav>
+<button onclick="show('songs')">🎵 Nuestras canciones</button>
+<button onclick="show('letter')">💌 Carta</button>
+<button onclick="show('spring')">🌻 Primavera</button>
+</nav>
+
+<!-- CANCIONES -->
+<section id="songs" class="section active">
+<h2>🎶 Las canciones que me recuerdan a ti</h2>
+
+<div class="song">
+<a href="https://youtu.be/98Akpf1ph2o" target="_blank">▶ Canción 1</a>
+<p>
+Cada vez que escucho esta canción siento que el tiempo se detiene.
+Me recuerda a tu sonrisa, a tus ojitos y a lo feliz que soy cuando estás conmigo.
+Gracias por hacer de los días normales los más especiales de mi vida. ❤️
+</p>
+</div>
+
+<div class="song">
+<a href="https://youtu.be/4N1iwQxiHrs" target="_blank">▶ Canción 2</a>
+<p>
+Si algún día estamos lejos, quiero que esta melodía te abrace por mí.
+Porque aunque la distancia exista, mi amor siempre encontrará el camino para llegar a ti.
+Te amo muchísimo, mi Sulfito. 🌷
+</p>
+</div>
+
+<div class="song">
+<a href="https://youtu.be/6hzrDeceEKc" target="_blank">▶ Canción 3</a>
+<p>
+Esta canción tiene un pedacito de nosotros.
+Cada nota me hace imaginar un futuro donde seguimos riendo, soñando y creciendo juntos.
+Eres mi lugar favorito en el mundo. 💛
+</p>
+</div>
+
+</section>
+
+<!-- CARTA -->
+<section id="letter" class="section">
+<h2>💌 Una carta para mi princesa</h2>
+
+<div class="letter">
+
+<p>Mi querida Sulfito:</p>
+
+<br>
+
+<p>
+No sé si algún día existirán palabras suficientes para describir todo lo que siento por ti,
+pero hoy quiero intentarlo. Desde que llegaste a mi vida descubrí que el amor también puede
+sentirse en los pequeños detalles: en una conversación, en una risa compartida, en un “¿cómo estás?”
+o incluso en el silencio cuando simplemente estamos juntos.
+</p>
+
+<br>
+
+<p>
+Admiro la persona tan hermosa que eres, no solo por fuera, sino por ese corazón tan noble que tienes.
+Me haces querer ser una mejor versión de mí cada día. Contigo aprendí que amar también es cuidar,
+escuchar, respetar y elegir a la misma persona una y otra vez.
+</p>
+
+<br>
+
+<p>
+Quiero que nunca dudes de algo: eres increíblemente importante para mí.
+Eres mi paz cuando todo parece complicado, mi alegría cuando el día ha sido pesado
+y la razón por la que tantas veces sonrío sin darme cuenta.
+</p>
+
+<br>
+
+<p>
+Gracias por existir, por permitirme acompañarte y por regalarme tantos momentos bonitos.
+Ojalá esta primavera sea una más de todas las que viviremos juntos.
+</p>
+
+<div class="signature">
+Con todo mi amor,<br>
+Daniel ❤️
+</div>
+
+</div>
+</section>
+
+<!-- FLORES -->
+<section id="spring" class="section">
+<h2>🌻 Primavera para la niña más hermosa</h2>
+
+<div class="flowers">
+
+<div class="flower">
+<svg width="100" height="140" viewBox="0 0 100 140">
+<circle cx="50" cy="40" r="12" fill="#8D6E63"/>
+<g fill="#FDD835">
+<ellipse cx="50" cy="15" rx="8" ry="16"/>
+<ellipse cx="50" cy="65" rx="8" ry="16"/>
+<ellipse cx="25" cy="40" rx="16" ry="8"/>
+<ellipse cx="75" cy="40" rx="16" ry="8"/>
+<ellipse transform="rotate(45 50 40)" cx="50" cy="15" rx="8" ry="16"/>
+<ellipse transform="rotate(-45 50 40)" cx="50" cy="15" rx="8" ry="16"/>
+</g>
+<rect x="47" y="52" width="6" height="65" fill="#43A047"/>
+<ellipse cx="38" cy="82" rx="10" ry="5" fill="#66BB6A"/>
+<ellipse cx="62" cy="95" rx="10" ry="5" fill="#66BB6A"/>
+</svg>
+</div>
+
+<div class="flower">
+<svg width="100" height="140" viewBox="0 0 100 140">
+<circle cx="50" cy="40" r="12" fill="#8D6E63"/>
+<g fill="#FFEB3B">
+<ellipse cx="50" cy="15" rx="8" ry="16"/>
+<ellipse cx="50" cy="65" rx="8" ry="16"/>
+<ellipse cx="25" cy="40" rx="16" ry="8"/>
+<ellipse cx="75" cy="40" rx="16" ry="8"/>
+<ellipse transform="rotate(45 50 40)" cx="50" cy="15" rx="8" ry="16"/>
+<ellipse transform="rotate(-45 50 40)" cx="50" cy="15" rx="8" ry="16"/>
+</g>
+<rect x="47" y="52" width="6" height="65" fill="#43A047"/>
+</svg>
+</div>
+
+<div class="flower">
+<svg width="100" height="140" viewBox="0 0 100 140">
+<circle cx="50" cy="40" r="12" fill="#8D6E63"/>
+<g fill="#FBC02D">
+<ellipse cx="50" cy="15" rx="8" ry="16"/>
+<ellipse cx="50" cy="65" rx="8" ry="16"/>
+<ellipse cx="25" cy="40" rx="16" ry="8"/>
+<ellipse cx="75" cy="40" rx="16" ry="8"/>
+<ellipse transform="rotate(45 50 40)" cx="50" cy="15" rx="8" ry="16"/>
+<ellipse transform="rotate(-45 50 40)" cx="50" cy="15" rx="8" ry="16"/>
+</g>
+<rect x="47" y="52" width="6" height="65" fill="#43A047"/>
+</svg>
+</div>
+
+<div class="flower">
+<svg width="100" height="140" viewBox="0 0 100 140">
+<circle cx="50" cy="40" r="12" fill="#8D6E63"/>
+<g fill="#FDD835">
+<ellipse cx="50" cy="15" rx="8" ry="16"/>
+<ellipse cx="50" cy="65" rx="8" ry="16"/>
+<ellipse cx="25" cy="40" rx="16" ry="8"/>
+<ellipse cx="75" cy="40" rx="16" ry="8"/>
+<ellipse transform="rotate(45 50 40)" cx="50" cy="15" rx="8" ry="16"/>
+<ellipse transform="rotate(-45 50 40)" cx="50" cy="15" rx="8" ry="16"/>
+</g>
+<rect x="47" y="52" width="6" height="65" fill="#43A047"/>
+</svg>
+</div>
+
+</div>
+
+<div class="message">
+🌼 Feliz primavera a la princesa más hermosa de todas. 🌼
+</div>
+
+<p style="text-align:center;margin-top:20px;font-size:1.1rem;">
+Que cada flor represente una razón por la que sonrío cuando pienso en ti.
+Espero que esta primavera llene tu vida de felicidad, paz y muchísimo amor.
+💛🌷
+</p>
+
+</section>
+
+<footer>
+Hecho con muchísimo amor para mi Sulfito ❤️
+</footer>
+
+<script>
+function show(id){
+document.querySelectorAll('.section').forEach(s=>s.classList.remove('active'));
+document.getElementById(id).classList.add('active');
+}
+
+function petals(){
+const petal=document.createElement('div');
+petal.className='petal';
+petal.innerHTML=Math.random()>0.5?'🌼':'🌸';
+petal.style.left=Math.random()*100+'vw';
+petal.style.animationDuration=(5+Math.random()*6)+'s';
+petal.style.opacity=Math.random();
+document.body.appendChild(petal);
+
+setTimeout(()=>petal.remove(),11000);
+}
+setInterval(petals,500);
+</script>
+
+</body>
+</html>
